@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.contenido{
+    background-color: #285a89;
+    height: 50px;
+    width: 100%;
+}
+
+#header{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+#botones{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15pt;
+    border-top: 2pt solid black;
+    border-bottom: 2pt solid black;
+    padding-top: 10pt;
+}
+
+#siglas{
+    color: #800040;
+    background-color: #ececec;
+    font-size: 45pt;
+    text-align: center;
+    width: 30%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#hola{
+    padding-top: 32pt;
+}
+
+#catt{
+    height: inherit ;
+    text-align: center;
+    font-size: 25pt;
+    color: #ececec;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: 15pt;
+    height: 30pt;
+}
+#titulo:hover{
+    background-color: #a6a3a358;
+}
+.bold:hover{
+    transition: font-size .5s;
+    font-size: 20pt;
+}
+
+.bold{
+    text-decoration: none;
+    color: rgb(19, 19, 176);
+}
+
+#enlaceHome{
+    text-decoration: none;
+    color: unset;
+}
+
+#enlace{
+    text-align: center;
+    width: 100%;
+}
+/*
+table{
+    border-style: solid;
+}
+td{
+    border-style: solid;
+}
+th{
+    border-style: solid;
+}
+tr{
+    border-style: solid;
+}*/
+
+#procedimiento{
+    width: 50%;
+}
+
+#registro{
+    width: 50%;
+    margin-top: 1200pt;
+}
+
+.interno{
+    height: 200pt;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 5pt;
+    list-style-type: decimal;
+}
+
+td li{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#imgEnlace{
+    height: 50pt;
+}
+
+#distinto{
+    height: 40pt;
+}
+
+#paleta{
+    color: #0d354a;
+    color: #285a89;
+    color: #ececec;
+    color: #a6a3a3;
+    color: #393939;
+}
+
+#footer{
+    background-color: #393939;
+    color: white;
+    font-size: medium;
+    height: 20pt;
+    margin-top: 10px;
+    bottom: 0pt;
+    padding-top: 5pt;
+}
