@@ -1,6 +1,10 @@
 #intro, .contenidoTabla{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+#intro{
+    font-style: unset;
+    width: 100%;
+}
 .contenidoTabla{
     padding: 10px;
 }
@@ -19,7 +23,6 @@
 
 #tablaTT{
     border-top: 2px solid black;
-    border-bottom: 2px solid black;
     padding: 5px;
     padding-bottom: 10px;
     width: 100%;
@@ -29,7 +32,7 @@
 }
 .tituloTabla{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid black;
     margin-top: 10px;
     margin-left: 15px;
@@ -38,7 +41,7 @@
     background-color: #a0c5abd5;
     padding: 3px;
 }
-#documentacion{
+.documentacion{
     background-color: transparent;
     width: max-content;
     align-items: center;
@@ -46,6 +49,7 @@
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 2px;
+    padding-bottom: 5px;
 }
 #contProtocolo{
     border-left: 2px dashed black;
@@ -58,10 +62,9 @@
 #contTTR{
     border-right: 2px dashed black;
 }
-#documentacion:hover{
+.documentacion:hover{
     font-size: 15px;
     transition: all .3s;
-    background-color: #d3d2d2;
 }
 .clicDoc{
     cursor: pointer;
@@ -72,13 +75,15 @@
     margin-top: 5px;
     border: 1px outset black;
     border-radius: 0px 10px 0px 10px;
+    margin-right: 10px;
 }
 .clicDoc:hover{
     transition: all .3s;
     background-color: #d3d2d2;
 }
-#div{ 
-    margin-right: 10px;
+#division{
+    border-top: 2px double black;
+    margin-top: 5px;
 }
 .filaEnlace{
     width: 20%;
@@ -90,7 +95,7 @@
     height: 20px;
     float: right;
     padding-right: 10px;
-    padding-top: 3px;
+    padding-top: 2px;
     cursor: pointer;
 }
 #click{
@@ -102,4 +107,54 @@
     color: #ececec;
     color: #a6a3a3;
     color: #393939;
+}
+
+
+
+#divPropuestas{
+    background-color: #ececec;
+}
+.contPropuestas, .contProfSeg{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #393939;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.enlPropuestas, .enlProfSeg{
+    text-decoration: none;
+    color: white;
+}
+.contPropuestas:hover, .contProfSeg:hover, .formatos:hover{
+    background-color: #393939d5;
+}
+.enlPropuestas:hover, .enlProfSeg:hover, .formatos:hover{
+    font-size: 15px;
+    transition: all .5s;
+}
+.contProfSeg{
+    border-radius: 0px 2px 20px 0px;
+}
+.contPropuestas{
+    border-radius: 2px 0px 0px 20px;
+}
+.enlFormatos, .enlRecursos{
+    text-decoration: none;
+    color: white;
+}
+.formatos{
+    text-align: center;
+    background-color: #393939;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+#formatoModificacion, #recursosEvaluacionSitiosWeb{
+    border-radius: 0px 2px 20px 0px;
+}
+#formatoProtocolo, #recursosAPA{
+    border-radius: 2px 0px 0px 20px;
 }

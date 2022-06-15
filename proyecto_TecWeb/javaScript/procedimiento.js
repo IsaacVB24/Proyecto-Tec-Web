@@ -7,6 +7,17 @@ const enlaceModificacion = "https://escom.ipn.mx/docs/escomunidad/catt/solicitud
 const referenciaAPA = "https://escom.ipn.mx/docs/escomunidad/catt/normasReferenciaAPA.pdf";
 const referenciaIEEE = "https://escom.ipn.mx/docs/escomunidad/catt/normasReferenciaIEEE.pdf";
 const enlaceEvaluacionSitiosWeb = "https://escom.ipn.mx/docs/escomunidad/catt/evaluacionSitiosWeb.pdf";
+const formulacioAcuse = "https://tinyurl.com/yc82frvj";
+const calendarioPresentaciones = "https://escom.ipn.mx/docs/escomunidad/catt/calendarioPresentacionesTT_20222.pdf";
+const entregaDiscos = "https://escom.ipn.mx/docs/escomunidad/catt/entregaDiscosTTII-TTR_20221.pdf";
+const solicitudReprogramacionPresentacion = "https://escom.ipn.mx/docs/escomunidad/catt/solicitudReprogramarPresentacionTT.docx";
+const acuseRecibido = "https://escom.ipn.mx/docs/escomunidad/catt/acuseReciboReporteTT_20192.docx";
+const solicitudTTExtraordinario = "https://escom.ipn.mx/docs/escomunidad/catt/formatoSolicitudTTExtraordinario20201.docx";
+const articuloTecnico = "https://escom.ipn.mx/docs/escomunidad/catt/articuloTecnicoTT.pdf";
+const cartaResponsiva = "https://escom.ipn.mx/docs/escomunidad/catt/cartaResponsivaTT_20212.docx";
+const formatoDisco = "https://escom.ipn.mx/docs/escomunidad/catt/formatoDiscoTT.pdf";
+const reporteTecnico = "https://escom.ipn.mx/docs/escomunidad/catt/formatoReporteTecnicoTT.pdf";
+const guiaPublicacionesTecnicas = "https://escom.ipn.mx/docs/escomunidad/catt/guiaPublicacionesTecnicas.txt";
 
 const semActual = "2022-2";
 
@@ -84,4 +95,9 @@ function pRecursos(){
     document.getElementById("divRecursos").style.borderRadius = borderRadiusOriginal;
     document.getElementById("divRecursos").setAttribute('onclick', 'dRecursos()');
     document.getElementById("botRecursos").style.color = "initial";
+}
+
+
+function pFormatosTT(){
+    document.getElementById("enlacesTT").innerHTML = "";
 }
