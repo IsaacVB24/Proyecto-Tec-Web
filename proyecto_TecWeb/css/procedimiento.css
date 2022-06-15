@@ -5,9 +5,10 @@
     font-style: unset;
     width: 100%;
 }
-.contenidoTabla{
+.contenidoTabla, #tablaEnlacesTT{
     padding: 10px;
 }
+
 
 /*
 *{
@@ -114,7 +115,7 @@
 #divPropuestas{
     background-color: #ececec;
 }
-.contPropuestas, .contProfSeg{
+.contPropuestas, .contProfSeg, .enlFormatosTT{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #393939;
@@ -123,14 +124,14 @@
     margin-bottom: 5px;
     cursor: pointer;
 }
-.enlPropuestas, .enlProfSeg{
+.enlPropuestas, .enlProfSeg, .enlFormatosTT{
     text-decoration: none;
     color: white;
 }
-.contPropuestas:hover, .contProfSeg:hover, .formatos:hover{
+.contPropuestas:hover, .contProfSeg:hover, .formatos:hover, .enlFormatosTT:hover{
     background-color: #393939d5;
 }
-.enlPropuestas:hover, .enlProfSeg:hover, .formatos:hover{
+.enlPropuestas:hover, .enlProfSeg:hover, .formatos:hover, .enlFormatosTT:hover{
     font-size: 15px;
     transition: all .5s;
 }
@@ -157,4 +158,11 @@
 }
 #formatoProtocolo, #recursosAPA{
     border-radius: 2px 0px 0px 20px;
+}
+
+
+
+#tablaEnlacesTT{
+    text-align: center;
+    width: 100%;
 }
