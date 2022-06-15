@@ -10,6 +10,7 @@
 <link href="../css/estilos.css" rel="stylesheet">
 <link href="../css/procedimiento.css" rel="stylesheet">
 <script type="text/javascript" src="../javaScript/encabezadoYPiePagina.js"></script>
+<script type="text/javascript" src="../javaScript/procedimiento.js"></script>
 </head>
 <body onload="hF()">
     <div id="header" class="general">
@@ -27,33 +28,45 @@
             </tr>
             <tr>
                 <td colspan="1" class="filaEnlace">
-                    <div class="clicDoc" id="div">
-                        <button id="documentacion">Propuestas de docentes</button>
-                        <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png">
+                    <div class="clicDoc" id="divPropuestas" onclick="dPropuestas()">
+                        <button class="documentacion"><p id="botPropuestas">Propuestas de docentes</p></button>
+                        <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png" id="imgPropuestas">
                     </div>
                 </td>
                 <td colspan="1" class="filaEnlace">
-                    <div class="clicDoc" id="div">
-                        <button id="documentacion">Formatos del protocolo</button>
-                        <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png">
+                    <div class="clicDoc" id="divFormatosProt" onclick="dFormatos()">
+                        <button class="documentacion"><p id="botFormatos">Formatos del protocolo</p></button>
+                        <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png" id="imgFormatos">
                     </div>
                 </td>
                 <td colspan="1" class="filaEnlace">
-                    <div class="clicDoc" id="div">
-                        <button id="documentacion">Recursos</button>
-                        <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png">
+                    <div class="clicDoc" id="divRecursos" onclick="dRecursos()">
+                        <button class="documentacion"><p id="botRecursos">Recursos</p></button>
+                        <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png" id="imgRecursos">
                     </div>
                 </td>
                 <td colspan="1" class="filaEnlace">
-                    <div class="clicDoc" id="div" style="border-left: 2px solid black; border-radius: 3px 0px 0px 3px;">
-                        <img class="imgBoton" id="click" src="../imagenesProyecto_TecWeb/blackClick.png" style="margin-top: 2px; margin-left: 3%;">
-                        <button id="documentacion" style="margin-right: 1%; text-align: right;">Registro del protocolo</button>
-                    </div>
+                    <a href="../html/registro.html">
+                        <div class="clicDoc" id="div" style="border-left: 3px solid black; border-radius: 3px 0px 0px 3px;">
+                            <img class="imgBoton" id="click" src="../imagenesProyecto_TecWeb/blackClick.png" style="margin-top: 1px; margin-left: 3%;">
+                            <button class="documentacion" style="margin-right: 1%; text-align: right;">Registro del protocolo</button>
+                        </div>
+                    </a>
                 </td>
             </tr>
+
+
+            
+            <tr id="enlacesProtocolo">
+            </tr>
+
+
+
+
+
             <tr>
                 <th colspan="1"><p class="tituloTabla">Trabajo Terminal I</p></th>
-                <td colspan="2" rowspan="2" class="contenidoTabla" id="contCentral">Se entiende por TT al proyecto que desarrollan, preferentemente en equipo, los alumnos de la ESCOM con el fin de demostrar la integración de las competencias adquiridas en las demás UA del programa académico.<br>Las UA de TT1 y TT2 tienen como objetivo que los alumnos integren las competencias desarrolladas durante su trayectoria en el programa ISC 2009, así como de cumplir con lo estipulado en la reglamentación para obtener su título profesional.</td>
+                <td colspan="2" rowspan="2" class="contenidoTabla" id="contCentral">Se entiende por TT al proyecto que desarrollan, preferentemente en equipo, los alumnos de la ESCOM con el fin de demostrar la integración de las competencias adquiridas en las demás UA del programa académico.<br><br>Las UA de TT1 y TT2 tienen como objetivo que los alumnos integren las competencias desarrolladas durante su trayectoria en el programa ISC 2009, así como de cumplir con lo estipulado en la reglamentación para obtener su título profesional.</td>
                 <th colspan="1"><p class="tituloTabla">Trabajo Terminal II</p></th>
             </tr>
             <tr>
@@ -63,24 +76,24 @@
                         <li>Haber aprobado 10 o más UA del nivel III del ISC</li>
                         <li>Tener un Protocolo aprobado</li>
                 </td>
-                <td colspan="1" class="contenidoTabla">Información sobre Trabajo Terminal II</td>
+                <td colspan="1" class="contenidoTabla">Para poder cursar TT2, es indispensable que los alumnos inscritos a TT1 tengan una calificación aprobatoria</td>
             </tr>
             <tr>
                 <td colspan="4">
-                    <div class="clicDoc">
-                        <button id="documentacion">Formatos de TT1 y TT2</button>
+                    <div class="clicDoc" id="divFormatosTT" onclick="dFormatosTT()">
+                        <button class="documentacion">Formatos de TT1 y TT2</button>
                         <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td colspan="3" class="contenidoTabla" id="contTTR">Se entiende por TTR al proyecto que desarrollan, preferentemente en equipo, en un semestre los alumnos de la ESCOM cuando no hayan aprobado TT2. Esto con el fin de acreditar la Unidad de Aprendizaje TT2 para el programa académico de ISC 2009.</td>
-                <th colspan="1"><p class="tituloTabla">Trabajo Terminal Remedial</p></th>
+                <th colspan="1"><p class="tituloTabla" id="contTTR">Trabajo Terminal Remedial</p></th>
             </tr>
             <tr>
-                <td colspan="4">
-                    <div class="clicDoc">
-                        <button id="documentacion">Documentación del protocolo</button>
+                <td colspan="4" id="division">
+                    <div class="clicDoc" id="divNormatividad" onclick="dNormatividad()">
+                        <button class="documentacion">Documentos de Normatividad</button>
                         <img class="imgBoton" src="../imagenesProyecto_TecWeb/black_flechaAbajo.png">
                     </div>
                 </td>
