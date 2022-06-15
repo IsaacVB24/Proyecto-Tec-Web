@@ -166,3 +166,15 @@
     text-align: center;
     width: 100%;
 }
+#formatoAcuse{
+    border-radius: 2px 0px 0px 0px;
+}
+#cartaResponsiva{
+    border-radius: 0px 0px 0px 20px;
+}
+#entregaDiscos{
+    border-radius: 0px 2px 0px 0px;
+}
+#guiaPubTecnicas{
+    border-radius: 0px 0px 20px 0px;
+}
