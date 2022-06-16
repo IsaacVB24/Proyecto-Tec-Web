@@ -1,5 +1,15 @@
 <?php
     session_start();
+    $nombreServidor = "proyecto_web";
+    $usuario = "";
+    $contrasenia = "";
+
+    $conexion = new mysqli($nombreServidor, $usuario, $contrasenia);
+    if($conexion->connect_error){
+        die("Conexión fallida: " . $conexion->connect_error);
+    }else{
+        // Código
+    }
 ?>
 
 <!DOCTYPE html>
