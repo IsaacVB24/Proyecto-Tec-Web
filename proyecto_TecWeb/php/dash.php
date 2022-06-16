@@ -4,7 +4,7 @@
     $usuario = "";
     $contrasenia = "";
 
-    $conexion = mysqli_connect($nombreServidor, $usuario, $contrasenia);
+    $conexion = mysqli_connect("localhost","root","", $nombreServidor);
     if(!$conexion){
         die("Conexión fallida: " . $conexion->connect_error);
     }else{
