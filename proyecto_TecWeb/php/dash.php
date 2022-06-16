@@ -1,4 +1,6 @@
 <?php
+    static $x = 1;
+    $x = $x + 1;
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +13,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="../css/dash.css" rel="stylesheet">
+<link href="../css/estilos.css" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="../imagenesProyecto_TecWeb/logo_escom2.png">
 <script type="text/javascript" src="../javaScript/encabezadoYPiePagina.js"></script>
 </head>
