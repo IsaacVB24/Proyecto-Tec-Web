@@ -146,6 +146,7 @@ function dNormatividad(){
     document.getElementById("imgNormatividad").src = flechaClic;
     document.getElementById("divNormatividad").setAttribute('onclick', 'pNormatividad()');
     document.getElementById("divNormatividad").style.backgroundColor = colorBotonClic;
+    document.getElementById("divNormatividad").style.borderRadius = borderRadiusClic;
     document.getElementById("botNormatividad").style.color = "white";
 }
 function pNormatividad(){
@@ -153,5 +154,6 @@ function pNormatividad(){
     document.getElementById("imgNormatividad").src = flechaOriginal;
     document.getElementById("divNormatividad").setAttribute('onclick', 'dNormatividad()');
     document.getElementById("divNormatividad").style.backgroundColor = colorBotonOriginal;
+    document.getElementById("divNormatividad").style.borderRadius = borderRadiusOriginal;
     document.getElementById("botNormatividad").style.color = "initial";
 }
