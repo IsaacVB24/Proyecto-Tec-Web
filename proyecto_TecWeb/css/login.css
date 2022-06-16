@@ -20,7 +20,7 @@ main{
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .contenedor_todo{
@@ -140,7 +140,6 @@ main{
 .formulario_Registrarse{
     display: none;
     padding: 5px 10px;
-    margin-bottom: 20px;
 }
 
 /*diseño responsivo*/
@@ -171,5 +170,8 @@ main{
         position: relative;
     }
 }
+
+
+
 
 
