@@ -7,7 +7,7 @@ const enlaceModificacion = "https://escom.ipn.mx/docs/escomunidad/catt/solicitud
 const referenciaAPA = "https://escom.ipn.mx/docs/escomunidad/catt/normasReferenciaAPA.pdf";
 const referenciaIEEE = "https://escom.ipn.mx/docs/escomunidad/catt/normasReferenciaIEEE.pdf";
 const enlaceEvaluacionSitiosWeb = "https://escom.ipn.mx/docs/escomunidad/catt/evaluacionSitiosWeb.pdf";
-const formulacioAcuse = "https://tinyurl.com/yc82frvj";
+const formularioAcuse = "https://tinyurl.com/yc82frvj";
 const calendarioPresentaciones = "https://escom.ipn.mx/docs/escomunidad/catt/calendarioPresentacionesTT_20222.pdf";
 const entregaDiscos = "https://escom.ipn.mx/docs/escomunidad/catt/entregaDiscosTTII-TTR_20221.pdf";
 const solicitudReprogramacionPresentacion = "https://escom.ipn.mx/docs/escomunidad/catt/solicitudReprogramarPresentacionTT.docx";
@@ -19,7 +19,7 @@ const formatoDisco = "https://escom.ipn.mx/docs/escomunidad/catt/formatoDiscoTT.
 const reporteTecnico = "https://escom.ipn.mx/docs/escomunidad/catt/formatoReporteTecnicoTT.pdf";
 const guiaPublicacionesTecnicas = "https://escom.ipn.mx/docs/escomunidad/catt/guiaPublicacionesTecnicas.txt";
 
-const semActual = "2022-2";
+const semActual = "22-2";
 
 const flechaOriginal = "../imagenesProyecto_TecWeb/black_flechaAbajo.png";
 const flechaClic = "../imagenesProyecto_TecWeb/flechaArriba.png";
@@ -33,6 +33,7 @@ const borderRadiusClic = "20px 20px 2px 2px";
 function dPropuestas(){
     pFormatos();
     pRecursos();
+    pFormatosTT();
     document.getElementById("enlacesProtocolo").innerHTML = "<td><a href='" + enlacePropuestas + "' class='enlPropuestas' target='_blank'><p class='contPropuestas'>Propuestas para protocolo " + semActual +"</p></a></td><td><p class='contProfSeg'><a href='" + enlaceProfsSeguimiento + "' class='enlProfSeg' target='_blank'>Profesores de seguimiento " + semActual + "</a></p></td><td></td><td></td>";
     document.getElementById("imgPropuestas").src = flechaClic;
     document.getElementById("divPropuestas").setAttribute('onclick', 'pPropuestas()');
@@ -57,6 +58,7 @@ function pPropuestas(){
 function dFormatos(){
     pPropuestas();
     pRecursos();
+    pFormatosTT();
     document.getElementById("enlacesProtocolo").innerHTML = "<td><a href='" + enlaceFormatoProtocolo + "' class='enlFormatos' target='_blank'><p class='formatos' id='formatoProtocolo'>Protocolo de TT</p></a></td><td><a href='" + enlaceEvaluacion + "' class='enlFormatos' target='_blank'><p class='formatos'>Evaluación de Protocolo</p></a></td><td><a href='" + enlaceModificacion + "' class='enlFormatos' target='_blank'><p class='formatos' id='formatoModificacion'>Solicitud de Modificación de TT</p></a></td><td></td>";
     document.getElementById("imgFormatos").src = flechaClic;
     document.getElementById("divFormatosProt").style.backgroundColor = colorBotonClic;
@@ -81,6 +83,7 @@ function pFormatos(){
 function dRecursos(){
     pPropuestas();
     pFormatos();
+    pFormatosTT();
     document.getElementById("enlacesProtocolo").innerHTML = "<td></td><td><a href='" + referenciaAPA + "' class='enlRecursos' target='_blank'><p class='formatos' id='recursosAPA'>Referencias APA</p></a></td><td><a href='" + referenciaIEEE + "' class='enlRecursos' target='_blank'><p class='formatos' id='recursosIEEE'>Referencias IEEE</p></a></td><td><a href='" + enlaceEvaluacionSitiosWeb + "' class='enlRecursos' target='_blank'><p class='formatos' id='recursosEvaluacionSitiosWeb'>Evaluación Sitios Web</p></a></td>";
     document.getElementById("imgRecursos").src = flechaClic;
     document.getElementById("divRecursos").style.backgroundColor = colorBotonClic;
@@ -98,6 +101,24 @@ function pRecursos(){
 }
 
 
+
+
+function dFormatosTT(){
+    pFormatos();
+    pPropuestas();
+    pRecursos();
+    document.getElementById("tablaEnlacesTT").innerHTML = "<tr><td class='enlFormatosTT' id='formatoAcuse'><a href='" + formularioAcuse + "' class='enlFormatosTT' target='_blank'><p class='formato'>Formato para envío de acuse " + semActual + "</p></a></td><td class='enlFormatosTT'><a href='" + calendarioPresentaciones + "' class='enlFormatosTT' target='_blank' id='calendarioPresentaciones'><p class='formato'>Calendario de Presentaciones TT " + semActual + "</p></a></td><td class='enlFormatosTT'><a href='" + enlaceProfsSeguimiento +"' class='enlFormatosTT' target='_blank' id='profesoresSeguimiento'><p class='formato'>Profesores de seguimiento " + semActual + "</p></a></td><td class='enlFormatosTT' id='entregaDiscos'><a href='" + entregaDiscos + "' class='enlFormatosTT' target='_blank'><p class='formato'>Entrega de Discos " + semActual + "</p></a></td class='enlFormatosTT'></tr><tr><td class='enlFormatosTT'><a href='" + solicitudReprogramacionPresentacion + "' class='enlFormatosTT' target='_blank' id='formatoReprogramacion'><p class='formato'>Solicitud Reprogramación Presentación TT</p></a></td><td class='enlFormatosTT'><a href='" + acuseRecibido + "' class='enlFormatosTT' target='_blank'><p class='formato' id='calendarioPresentaciones'>Acuse de Recibido</p></a></td><td class='enlFormatosTT'><a href='" + solicitudTTExtraordinario + "' class='enlFormatosTT' target='_blank'><p class='formato' id='profesoresSeguimiento'>Solicitud TT Extraordinario</p></a></td><td class='enlFormatosTT'><a href='" + articuloTecnico + "' class='enlFormatosTT' target='_blank'><p class='formato' id='entregaDiscos'>Artículo Técnico del TT</p></a></td></tr><tr><td class='enlFormatosTT' id='cartaResponsiva'><a href='" + cartaResponsiva + "' class='enlFormatosTT' target='_blank'><p class='formato'>Carta Responsiva</p></a></td><td class='enlFormatosTT'><a href='" + formatoDisco + "' class='enlFormatosTT' target='_blank'><p class='formato' id='calendarioPresentaciones'>Formato de Disco</p></a></td><td class='enlFormatosTT'><a href='" + reporteTecnico + "' class='enlFormatosTT' target='_blank'><p class='formato' id='profesoresSeguimiento'>Reporte Técnico</p></a></td><td class='enlFormatosTT' id='guiaPubTecnicas'><a href='" + guiaPublicacionesTecnicas + "' class='enlFormatosTT' target='_blank'><p class='formato'>Guía de Publicaciones Técnicas</p></a></td></tr>";
+    document.getElementById("divFormatosTT").setAttribute('onclick', 'pFormatosTT()');
+    document.getElementById("imgFormatosTT").src = flechaClic;
+    document.getElementById("divFormatosTT").style.backgroundColor = colorBotonClic;
+    document.getElementById("divFormatosTT").style.borderRadius = borderRadiusClic;
+    document.getElementById("botFormatosTT").style.color = "white";
+}
 function pFormatosTT(){
-    document.getElementById("enlacesTT").innerHTML = "";
+    document.getElementById("tablaEnlacesTT").innerHTML = "";
+    document.getElementById("divFormatosTT").setAttribute('onclick', 'dFormatosTT()');
+    document.getElementById("imgFormatosTT").src = flechaOriginal;
+    document.getElementById("divFormatosTT").style.backgroundColor = colorBotonOriginal;
+    document.getElementById("divFormatosTT").style.borderRadius = borderRadiusOriginal;
+    document.getElementById("botFormatosTT").style.color = "initial";
 }
