@@ -1,5 +1,174 @@
-body{
-    background-image: url("../imagenesProyecto_TecWeb/logo_escom.png");
-    background-size: 40px;
-    background-color: rgba(173, 169, 169, 0.445);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
 }
+
+body{
+    background-image: url(../imagenesProyecto_TecWeb/escom.jpg);
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    /*Fijar imagen en pantalla*/
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor_todo{
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+    position:relative;
+}
+
+.caja_fondo{
+    width: 100%;
+    padding: 10px 20px;
+    display:flex;
+    justify-content: center;   
+    /*Degradar la imagen*/
+    backdrop-filter: blur(10px);
+    /*Disminuir opacidad*/
+    background-color: rgb(0, 0, 181, .2);
+}
+
+.caja_fondo div{
+    margin:100px 40px;
+    color:white;
+    transition: all 500ms;;
+}
+
+.caja_fondo div p,
+.caja_fondo div button{
+    margin-top: 30px;
+}
+
+.caja_fondo div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_fondo button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja_fondo button:hover{
+    background-color: #fff;
+    color: rgb(0, 45, 170);
+}
+
+/*Formularios*/
+
+.contenedor_Formularios{
+    /*Posicionar verticalmente*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;
+    position: relative;
+    top:-185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.855, 0.320, 1.275)
+}
+
+.contenedor_Formularios form{
+    width: 100%;
+    padding: 40px 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.contenedor_Formularios form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d354a;
+}
+
+.contenedor_Formularios form input{
+    width:100%;
+    margin-top: 10px;
+    padding: 20px;
+    border:none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor_Formularios form button{
+    padding: 15px 25px;
+    margin-top: 15px;
+    border: none;
+    font-size: 14px;
+    background-color: #0d354a;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+}
+
+.contenedor_Formularios form button:hover{
+    background-color: #ffffff; 
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.formulario_iniciarSesion{
+    opacity: 1;
+    display: block;
+}
+
+.formulario_Registrarse{
+    display: none;
+    padding: 5px 10px;
+}
+
+/*diseño responsivo*/
+@media screen and (max-width: 800px){
+    margin{
+        margin-top: 50px;
+    } 
+
+    .caja_fondo{
+        max-width: 350px;
+        height:300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja_fondo div{
+        margin:0px;
+        position: absolute;
+    }
+
+    /*Formularios*/
+    .contenedor_Formularios{
+        top:-10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenedor_Formularios form{
+        position: relative;
+    }
+}
+
+

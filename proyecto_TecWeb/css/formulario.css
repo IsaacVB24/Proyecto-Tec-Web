@@ -1,3 +1,11 @@
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+legend{
+    text-align: left;
+    margin: 10px;
+}
 .centro{
     margin: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -5,7 +13,7 @@
 }
 
 .i{
-    margin: 20px;
+    margin: 30px;
     
 }
 
@@ -19,9 +27,49 @@
     color: #000;
     font-size: 16px;
     margin-left: 34px;
-    margin-top: 10px;
+    margin-top: 20px;
+    
+}
+
+.submit{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #bfbfbf;
+    border: none;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.submit:hover{
+    background-color: #5d5d5d; /* Green */
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .inicio input[type="email"], .d input[type="email"]{
     width: 400px;
 }
+
+.genero{
+    background: transparent;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    position:relative;
+    font-size: 14px;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.i label{
+    padding: 10px 20px;
+}
+
+
+
