@@ -26,7 +26,10 @@
         <body onload="hF()">
             <div id="header" class="general">
             </div>
-            
+            <div class="contDash" id="textInicial">
+                <p id="parrafoInicial">Aún no tienes registrado un protocolo</p>
+            </div>
+
             <div id="footer" class="general">
             </div>
         </body>

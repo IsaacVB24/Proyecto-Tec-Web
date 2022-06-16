@@ -8,3 +8,15 @@ body{
     background-size: 40px;
     background-color: #9b979771;
 }
+
+.contDash{
+    border: 2px solid black;
+}
+#textInicial{
+    width: 80%;
+}
+#parrafoInicial{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
