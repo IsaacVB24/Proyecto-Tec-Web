@@ -1,5 +1,5 @@
 <?php
-    echo "Hola Mundo";
+    echo "Hola Mundo desde PHP";
 ?>
 
 
@@ -15,6 +15,6 @@
 <link href="" rel="stylesheet">
 </head>
 <body>
-    
+    Hola mundo desde HTML
 </body>
 </html>
