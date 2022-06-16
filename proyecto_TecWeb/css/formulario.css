@@ -17,18 +17,23 @@ legend{
     
 }
 
+.d{
+    margin: 30px;
+
+}
+
 .centro input[type="text"], input[type="email"], input[type="password"]{
     text-align: center;
-    border: 1px solid rgb(89, 89, 89);
+    border: 1px solid rgb(129, 129, 129);
     background: transparent;
     outline: none;
     height: 40px;
     width: 250px;
-    color: #000;
+    color: rgb(130, 28, 28);
     font-size: 16px;
     margin-left: 34px;
     margin-top: 20px;
-    
+    margin-bottom: 15px;
 }
 
 .submit{
@@ -56,6 +61,16 @@ legend{
     width: 400px;
 }
 
+.i input[type="date"]{
+    width: 200px;
+    margin: 10px;
+    background-color: #bfbfbf;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+
 .genero{
     background: transparent;
     margin-bottom: 30px;
@@ -70,6 +85,9 @@ legend{
 .i label{
     padding: 10px 20px;
 }
+
+
+
 
 
 
