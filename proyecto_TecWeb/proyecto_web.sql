@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-06-2022 a las 17:53:16
+-- Tiempo de generación: 20-06-2022 a las 20:37:24
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -28,14 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `alumno` (
-  `boleta` int(10) NOT NULL,
-  `nombre` varchar(30) NOT NULL,
-  `apellidoP` varchar(30) NOT NULL,
-  `apellidoM` varchar(30) NOT NULL,
-  `curp` varchar(18) NOT NULL,
-  `telefono` int(10) NOT NULL,
-  `correo` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL
+  `boletaA` int(10) NOT NULL,
+  `nombreA` varchar(30) NOT NULL,
+  `apellidosA` varchar(30) NOT NULL,
+  `telefonoA` int(10) NOT NULL,
+  `correoA` varchar(30) NOT NULL,
+  `passwordA` varchar(30) NOT NULL,
+  `semestreA` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -54,15 +53,32 @@ CREATE TABLE `catt` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `equipo`
+--
+
+CREATE TABLE `equipo` (
+  `nombreEquipo` varchar(30) NOT NULL,
+  `apellidoEquipo` varchar(45) NOT NULL,
+  `boletaEquipo` int(10) NOT NULL,
+  `correoEquipo` int(45) NOT NULL,
+  `fotoEquipo` longblob NOT NULL,
+  `BoletaA` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `profesor`
 --
 
 CREATE TABLE `profesor` (
-  `nombre` varchar(45) NOT NULL,
+  `nombreP` varchar(45) NOT NULL,
   `matricula` int(10) NOT NULL,
   `cv` longblob DEFAULT NULL,
-  `correo` varchar(45) NOT NULL,
-  `passwordP` varchar(30) NOT NULL
+  `correoP` varchar(45) NOT NULL,
+  `passwordP` varchar(30) NOT NULL,
+  `apellidosP` varchar(30) NOT NULL,
+  `telefonoP` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -98,13 +114,19 @@ CREATE TABLE `trabajoterminal` (
 -- Indices de la tabla `alumno`
 --
 ALTER TABLE `alumno`
-  ADD PRIMARY KEY (`boleta`);
+  ADD PRIMARY KEY (`boletaA`);
 
 --
 -- Indices de la tabla `catt`
 --
 ALTER TABLE `catt`
   ADD PRIMARY KEY (`idCatt`);
+
+--
+-- Indices de la tabla `equipo`
+--
+ALTER TABLE `equipo`
+  ADD KEY `fk_equipo` (`BoletaA`);
 
 --
 -- Indices de la tabla `profesor`
@@ -147,6 +169,12 @@ ALTER TABLE `trabajoterminal`
 --
 
 --
+-- Filtros para la tabla `equipo`
+--
+ALTER TABLE `equipo`
+  ADD CONSTRAINT `fk_equipo` FOREIGN KEY (`BoletaA`) REFERENCES `alumno` (`boletaA`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Filtros para la tabla `profesor-tt`
 --
 ALTER TABLE `profesor-tt`
@@ -157,7 +185,7 @@ ALTER TABLE `profesor-tt`
 -- Filtros para la tabla `trabajoterminal`
 --
 ALTER TABLE `trabajoterminal`
-  ADD CONSTRAINT `fk_alumno` FOREIGN KEY (`boleta`) REFERENCES `alumno` (`boleta`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk_alumno` FOREIGN KEY (`boleta`) REFERENCES `alumno` (`boletaA`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
