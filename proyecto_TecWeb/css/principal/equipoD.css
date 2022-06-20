@@ -1,0 +1,45 @@
+body{
+	background: #DBB89C;
+}
+.Contenido{
+    margin: 2%;
+    padding: 2%;
+    height: 90%;
+    font-family: Calibri;   
+    font-size: 20px;
+    background: #fff ;
+    border-radius: 2em;
+    margin: 1em;
+}
+
+
+.Contenedor input{
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    padding: 10px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Ginebra;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #8F4100;
+    border-radius: 1em;
+ }
+ th, tr {
+    text-align: center;
+    height: 70px;
+    vertical-align: top;
+    color: #8F4100;
+ }
+
+th a{
+   border-radius: 1em; 
+}
+
+

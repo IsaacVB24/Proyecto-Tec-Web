@@ -1,0 +1,101 @@
+body{
+	background: #DBB89C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    min-height: 500px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba:(0,0,0,0.1);
+}
+
+.contenedor .izquierdo{
+	background: #8F4100;
+	padding: 40px;
+}
+
+.perfil{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2)
+}
+.perfil .img{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.perfil .img img{
+	width: 180px;
+  height: 180px;
+  display: block;
+ margin: 10px auto;
+}
+
+.botonImagen{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    background-color: #D15F00;
+    border-radius: 4px;
+    border: 2px solid #D15F00;
+  }
+
+.botonImagen:hover{
+    color: #D15F00;
+    background-color: #ffffff;
+  }
+
+.contenedor .derecho{
+	background: #fff;
+	padding: 20px;
+	cursor: pointer;
+}
+
+form label{
+	width:100%;
+	color: #8F4100;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:90%;
+	padding:15px 15px;
+	border:1px solid #8F4100;
+	border-radius:3px;
+	background-color:#fff;
+	margin:8px 0;
+	border-color: #8F4100;
+	height: 30PX;
+}
+
+.botonEditar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #8F4100;
+    border-radius: 4px;
+    border: 2px solid #8F4100;
+  }
+
+.botonEditar:hover{
+    color: #8F4100;
+    background-color: #ffffff;
+  }
