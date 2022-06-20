@@ -1,0 +1,88 @@
+body{
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.contenedor{
+    width: 1000px;
+    height: 500px;
+    background: #fff;
+    display: grid;
+}
+
+form{
+	width:600px;
+	height: 500px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#003147;
+	border-color: #003147;
+
+}
+
+form label{
+	width:100%;
+	color: #fff;
+}
+
+form input[type="text"]{
+	width:500px;
+	height: 50px;
+	padding:15px 15px;
+	border:1px solid #B1B1B1;
+	border-radius:3px;
+	background-color:#fff;
+	margin:8px 10px;
+	border-color: #003147;
+}
+
+.botonSubir{
+	text-align: center;
+    text-decoration: none;
+    margin:8px 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #003147;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+  }
+
+.botonSubir:hover{
+    color: #fff;
+    background-color: #003147;
+  }
+
+.lista {
+	width: 200px;
+	margin:15px 10px;
+}
+
+.lista ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.lista a {
+		display: block;
+		padding: 15px;
+		background-color: #fff;
+		text-decoration: none;
+		color: #003147;
+	}
+	.lista a:hover {
+		background-color: #003147;
+		color: #fff;
+	}
+	.lista ul li ul {
+		display: none;
+	}
+	.lista ul li a:hover + ul, .lista ul li ul:hover {
+		display: block;
+	}
