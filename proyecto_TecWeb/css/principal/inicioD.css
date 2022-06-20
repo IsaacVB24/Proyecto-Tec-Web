@@ -1,5 +1,5 @@
 body{
-	background: #DBB89C;
+	background: lightblue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -80,7 +80,7 @@ form input[type="email"]{
 	border-radius:3px;
 	background-color:#fff;
 	margin:8px 0;
-	border-color: #8F4100;
+	border-color: #003147;
 	height: 30PX;
 }
 
@@ -90,12 +90,12 @@ form input[type="email"]{
     font-weight: 600;
     font-size: 12px;
     color: #ffffff;
-    background-color: #8F4100;
+    background-color: #003147;
     border-radius: 4px;
-    border: 2px solid #8F4100;
+    border: 2px solid #003147;
   }
 
 .botonEditar:hover{
-    color: #8F4100;
+    color: #003147;
     background-color: #ffffff;
   }
