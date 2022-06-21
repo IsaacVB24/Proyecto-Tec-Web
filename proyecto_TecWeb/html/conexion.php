@@ -1,5 +1,5 @@
    <?php
-    $conexion = mysqli_connect("localhost", "root", "root", "proyecto_web");
+    $conexion = mysqli_connect("localhost", "root", "", "proyecto_web");
     /*
     if($conexion){
         echo "Conectado exitosamente a la BD";
