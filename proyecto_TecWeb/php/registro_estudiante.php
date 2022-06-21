@@ -1,5 +1,5 @@
-   <?php
-     include 'conexion.php';
+<?php
+  include 'conexion.php';
 
     $boletaAlumno = $_POST['boletaAlumno'];
     $semestreAlumno = $_POST['semestreAlumno'];
@@ -16,7 +16,7 @@
     $contraAlumno = hash('sha512', $contraAlumno);    
 
     $query = "INSERT INTO alumno (boletaA, nombreA, apellidosA, telefonoA, correoA, passwordA, semestreA, imagen) 
-                           VALUES ('$boletaAlumno', '$nombreAlumno', '$apellidosAlumno', '$telefonoAlumno', '$emailAlumno', '$contraAlumno', '$semestreAlumno',  '$imagen')";
+                          VALUES ('$boletaAlumno', '$nombreAlumno', '$apellidosAlumno', '$telefonoAlumno', '$emailAlumno', '$contraAlumno', '$semestreAlumno',  '$imagen')";
 
    /*Verificar correo*/
    $Verificar_correo = mysqli_query ($conexion, "SELECT * FROM alumno WHERE correoA='$emailAlumno'");

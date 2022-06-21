@@ -23,6 +23,9 @@
 <body onload="hF()">
     <div id="header" class="general">
     </div>
+    <div id="prueba">
+
+    </div>
     <!--
     <p style="background-color: white;">
         <br>
@@ -62,11 +65,11 @@
                     <button>Entrar</button>
                 </form>
                 <!--Formulario registrarse-->
-                <form action="../php/registro_estudiante.php" method="POST" class="formulario_Registrarse" enctype="multipart/form-data">
+                <form action="../js/registro.js" method="POST" id="formularioPrueba" class="formulario_Registrarse" enctype="multipart/form-data">
                     <BR><BR><BR><h2>Registro del Alumno</h2>
                     <input type="text" REQUIRED name="boletaAlumno" placeholder="Boleta" maxlength="10" id="boleta" data-validetta="required,maxLength[10]">
 
-                     <input type="text" REQUIRED name="semestreAlumno" placeholder="semestre" maxlength="2" id="semestre" data-validetta="required,maxLength[2]">
+                    <input type="text" REQUIRED name="semestreAlumno" placeholder="semestre" maxlength="2" id="semestre" data-validetta="required,maxLength[2]">
 
                     <input type="text" REQUIRED name="nombreAlumno" placeholder="Nombre(s)" maxlength="30" id="nombre" data-validetta="required,maxLength[30]">
 
@@ -80,7 +83,7 @@
                     
                     <input type = "file" REQUIRED name = "Imagen" />
 
-                    <button>Registrarse</button>    
+                    <button type="submit">Registrarse</button>    
                 </form>
 
             </div>
