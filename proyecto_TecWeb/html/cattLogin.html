@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="../css/estilos.css" rel="stylesheet">
-<link href="../css/loginCATT.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/loginCATT.css">
 <link rel="icon" type="image/x-icon" href="../imagenesProyecto_TecWeb/logo_escom2.png">
 <script type="text/javascript" src="../javaScript/encabezadoYPiePagina.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -25,8 +25,10 @@
                     let respClien = JSON.parse(respAX);
                     if(respClien.cod == 1){
                         // Datos correctos
+                        alert(respAX);
                         document.getElementById("prueba").innerHTML = "Datos correctos";
                     }else{
+                        alert(respAX);
                         document.getElementById("prueba").innerHTML = "Datos INcorrectos";
                     }
                 }
@@ -42,12 +44,12 @@
     <div id="prueba">
 
     </div>
-    <div>
+    <div class="contLoginCATT">
         <form id="formCATT">
             <h2>Iniciar Sesión</h2>
-            <input type="text" REQUIRED name="boleta" placeholder="Boleta" >
-            <input type="password" REQUIRED name="contra" placeholder="Contraseña" >
-            <button id="botCATT">Entrar</button>
+            <input type="email" REQUIRED name="correo" placeholder="&nbsp;Correo electrónico" maxlength="30" style="align-items: center;">
+            <input type="password" REQUIRED name="contra" maxlength="30" placeholder="&nbsp;Contraseña">
+            <button type="submit" id="botCATT">&nbsp;Iniciar Sesión&nbsp;</button>
         </form>
     </div>
     <div id="footer" style="display: none;">

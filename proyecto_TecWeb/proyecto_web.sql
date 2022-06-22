@@ -58,9 +58,12 @@ INSERT INTO `alumno` (`boletaA`, `nombreA`, `apellidosA`, `telefonoA`, `correoA`
 CREATE TABLE `catt` (
   `correo` varchar(30) NOT NULL,
   `nombre` varchar(40) NOT NULL,
-  `passwordCATT` varchar(30) NOT NULL,
+  `passwordCATT` varchar(150) NOT NULL,
   `idCatt` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `catt` (`correo`, `nombre`, `passwordCATT`, `idCatt`) VALUES
+('correo@catt.ipn.mx', 'SUPER USUARIO', "d404559f602eab6fd602ac7680dacbfaadd13630335e951f097af3900e9de176b6db28512f2e000b9d04fba5133e8b1c6e8df59db3a8ab9d60be4b97cc9e81db", '1');
 
 -- --------------------------------------------------------
 

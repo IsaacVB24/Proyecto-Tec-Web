@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    /*border: 1px solid blue;*/
 }
 
 body{
@@ -12,11 +13,48 @@ body{
 .contDash{
     border: 2px solid black;
 }
-#textInicial{
-    width: 80%;
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #parrafoInicial{
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
+}
+
+.contLoginCATT{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+    border-radius: 50px 5px 50px 5px;
+}
+#formCATT{
+    margin-top: 2rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+form{
+    width: 40%;
+}
+input{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    font-size: medium;
+    display: flex;
+}
+input, button{
+    align-items: center;
+    margin: 2rem;
+    height: 3rem;
+}
+button{
+    background-color: #393939;
+    color: white;
+    cursor: pointer;
 }
