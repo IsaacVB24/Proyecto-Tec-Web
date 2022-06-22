@@ -58,7 +58,7 @@
             <!--Formulario para iniciar sesión y registrarse-->
             <div class="contenedor_Formularios">
                 <!--Formulario para iniciar sesión-->
-                <form action="../php/inicioSesion_estudiante.php" method="post" class="formulario_iniciarSesion">
+                <form action="../html/inicioE.php" method="post" class="formulario_iniciarSesion">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" REQUIRED name="boleta" placeholder="Boleta" >
                     <input type="password" REQUIRED name="contra" placeholder="Contraseña" >
