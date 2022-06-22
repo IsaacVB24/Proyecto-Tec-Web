@@ -8,7 +8,7 @@
     $contrasenia = $_POST['contra'];
     $contrasenia = hash('sha512', $contrasenia); 
 
-    $sentenciaValidacion = "SELECT boletaA, passwordA  FROM alumno WHERE boletaA = '$boleta'";
+    $sentenciaValidacion = "SELECT boletaA, passwordA  FROM alumno WHERE boletaA = '$boleta' AND passwordA = '$contrasenia'";
     $respSentValidacion = mysqli_query($conexion, $sentenciaValidacion);
     if(mysqli_num_rows($respSentValidacion) == 1){
         $respAX["cod"] = 1;

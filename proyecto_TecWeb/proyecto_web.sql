@@ -58,7 +58,7 @@ INSERT INTO `alumno` (`boletaA`, `nombreA`, `apellidosA`, `telefonoA`, `correoA`
 CREATE TABLE `catt` (
   `correo` varchar(30) NOT NULL,
   `nombre` varchar(40) NOT NULL,
-  `password` varchar(30) NOT NULL,
+  `passwordCATT` varchar(30) NOT NULL,
   `idCatt` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
