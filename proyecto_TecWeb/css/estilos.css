@@ -28,6 +28,7 @@
     background-color: #ececec;
     height: 60px;
     margin-right: 20px;
+    cursor: pointer;
     padding: 2px;
     margin-top: 5px;
     border-radius: 10px 0px 10px 0px;
@@ -47,6 +48,7 @@
     background-color: #ececec;
     font-size: 45pt;
     text-align: center;
+    cursor: pointer;
     width: 30%;
     font-family: 'Courier New', Courier, monospace;
 }

@@ -1,6 +1,7 @@
 <?php
     include("../php/conexion.php");
     
+    //No sé si haga falta un session_start();
     $respAX = [];
 
     $boleta = $_POST['boleta'];
